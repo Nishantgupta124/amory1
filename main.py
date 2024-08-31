@@ -1,5 +1,5 @@
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 import telebot
 import subprocess
 import datetime
@@ -57,7 +57,7 @@ def write_config(config):
     with open(CONFIG_FILE, 'w') as f:
         json.dump(config, f)
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 config = load_config()
 bot = telebot.TeleBot(config['bot_token'])
@@ -65,7 +65,7 @@ ADMIN_IDS = set(config['admin_ids'])
 USER_FILE = config['user_file']
 LOG_FILE = config['log_file']
 COOLDOWN_TIME = config['cooldown_time']
-USER_COOLDOWN = 300  # Cooldown time for normal users in seconds
+USER_COOLDOWN = 0  # Cooldown time for normal users in seconds
 
 admin_balances = config.get('admin_balances', {})
 bgmi_cooldown = {}
@@ -128,8 +128,8 @@ def send_welcome(message):
 
 # Bot command handlers
 import shutil
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 @bot.message_handler(commands=['add'])
 def add_user(message):
     if str(message.chat.id) in ADMIN_IDS:
@@ -185,8 +185,8 @@ def add_user(message):
         response = "ONLY OWNER CAN USE."
     bot.send_message(message.chat.id, response)
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT    
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT    
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 @bot.message_handler(commands=['remove'])
 def remove_user(message):
@@ -232,7 +232,7 @@ def show_all_users(message):
         response = "ONLY OWNER CAN USE."
     bot.send_message(message.chat.id, response)
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 @bot.message_handler(commands=['logs'])
 def show_recent_logs(message):
@@ -249,8 +249,8 @@ def show_recent_logs(message):
 def show_user_id(message):
     bot.send_message(message.chat.id, f"🤖Your ID: {str(message.chat.id)}")
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 # Attack functionality
 def start_attack(user_id, target, port, duration):
@@ -281,8 +281,8 @@ def handle_attack_button(message):
     else:
         bot.send_message(message.chat.id, "🚫 𝗨𝗻𝗮𝘂𝘁𝗼𝗿𝗶𝘀𝗲𝗱 𝗔𝗰𝗰𝗲𝘀𝘀! 🚫\n\nOops! It seems like you don't have permission to use the Attack command. To gain access and unleash the power of attacks, you can:\n\n👉 Contact an Admin or the Owner for approval.\n🌟 Become a proud supporter and purchase approval.\n💬 Chat with an admin now and level up your experience!\n\nLet's get you the access you need!")
 
-    # SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+    # SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 def handle_attack_details(message):
     user_id = str(message.chat.id)
@@ -311,8 +311,8 @@ def handle_attack_details(message):
     else:
         bot.send_message(message.chat.id, "🚫 𝗨𝗻𝗮𝘂𝘁𝗼𝗿𝗶𝘀𝗲𝗱 𝗔𝗰𝗰𝗲𝘀𝘀! 🚫")
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT        
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT        
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 @bot.message_handler(func=lambda message: message.text == 'ℹ️ My Info')
 def handle_my_info_button(message):
@@ -330,8 +330,8 @@ def handle_my_info_button(message):
                 f"💰 Balance Rs: {balance} INR.")
     bot.send_message(message.chat.id, response)
 
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 @bot.message_handler(commands=['broadcast'])
 def broadcast(message):
@@ -367,13 +367,13 @@ if __name__ == '__main__':
             time.sleep(1)
 
 
-    # SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
-# SCRIPT MADE BY @venomXcrazy ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+    # SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
+# SCRIPT MADE BY @rishabgupta01 ON TELEGRAM THIS IS A PAID SCRIPT MOST POWERFULL A DDOS TELEGRAM BOT SCRIPT
 
 
 
